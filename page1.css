@@ -5,8 +5,12 @@ body {
 header {
     background-color: rgb(40, 40, 40);
     overflow: hidden;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
+}
 .topnav a {
     text-decoration: none;
     float: left;
@@ -36,7 +40,7 @@ header {
 
 .topnav .buscador button {
     float: right;
-    padding: 8px 10px;
+    padding: 8.3px 10px;
     margin-top: 8px;
     margin-right: 16px;
     background: #ddd;
@@ -49,12 +53,12 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
+    .topnav a {
         display: none;
     }
 
     .topnav a.icon {
-        float: right;
+        float: left;
         display: block;
     }
 }
